@@ -1,0 +1,126 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  min-height: 35rem;
+  position: relative;
+}
+.register {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  z-index: 2;
+}
+
+.login {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  z-index: 2;
+}
+
+.login .login-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 35rem;
+  height: 100%;
+  background-color: rgba(0, 19, 102, 0.6);
+  transform: skewY(4deg);
+  transform-origin: bottom right;
+}
+
+.login .masthead-content h1 {
+  font-size: 2.5rem;
+}
+
+.login .masthead-content p {
+  font-size: 1.2rem;
+}
+
+.login .masthead-content p strong {
+  font-weight: 700;
+}
+
+.login .masthead-content .input-group-newsletter input {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.login .masthead-content .input-group-newsletter button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem;
+}
+
+/*.login, .register {
+  margin-top: 50px;
+}*/
+
+@media (max-width: 768px) {
+  .page-header {
+    height: 185vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .register {
+    position: absolute;
+    height: 100%;
+    min-height: 0;
+    width: 47%;
+    padding-bottom: 0;
+    right: 0;
+    top:0;
+  }
+  .register .register-bg {
+    min-height: 0;
+    transform: skewX(-8deg);
+    transform-origin: top right;
+  }
+  .login {
+    height: 100%;
+    min-height: 0;
+    width: 54%;
+    padding-bottom: 0;
+  }
+  .login .login-bg {
+    min-height: 0;
+    transform: skewX(-8deg);
+    transform-origin: top right;
+  }
+  .login .masthead-content {
+    padding-left: 3rem;
+    padding-right: 10rem;
+  }
+  .login .masthead-content h1 {
+    font-size: 3.5rem;
+  }
+  .login .masthead-content p {
+    font-size: 1.3rem;
+  }
+  .register .masthead-content {
+    padding-left: 6rem;
+    padding-right: 3rem;
+  }
+}
+.masthead-content {
+  margin-top: 50px;
+}
+.masthead-content .card .form{
+  max-width: 350px;
+  margin: auto;
+}
+.masthead-content .card .form .logo-container{
+  margin-bottom:55px;
+  margin-top: 25px;
+}
+.img-brand{
+  margin-right: 15px;
+}
